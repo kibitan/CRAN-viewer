@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20171025193052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "packages", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "version", null: false
+    t.json "raw_data", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name", "version"], name: "index_packages_on_name_and_version", unique: true
+    t.index ["name"], name: "index_packages_on_name"
+  end
 
 end
