@@ -10,3 +10,9 @@
 # setup
 
 run `bin/setup`
+
+
+# import from CRAN
+
+run `rake packages:import_from_CRAN`
+
