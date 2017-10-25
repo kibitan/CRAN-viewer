@@ -23,4 +23,6 @@ class Package < ApplicationRecord
   end
 
   validates_uniqueness_of :name, scope: :version
+
+  has_one :description
 end
