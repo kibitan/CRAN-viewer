@@ -22,6 +22,7 @@ class Package < ApplicationRecord
     required_column.validates :raw_data
   end
 
+  # NOTE: validates_uniqueness_of is slow for validating, it will make SQL.
   validates_uniqueness_of :name, scope: :version
 
   has_one :description
