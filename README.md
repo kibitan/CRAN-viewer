@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[CRAN](https://cran.r-project.org/) package viewer.
 
-Things you may want to cover:
+# requirement
 
-* Ruby version
+* ruby 2.4.2
+* PostgreSQL
 
-* System dependencies
+# setup
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+run `bin/setup`
