@@ -20,7 +20,7 @@ run `rake packages:import_from_CRAN`
 
 Similar with `OPERATION` of [trailblazer](http://trailblazer.to/).
 Differences is, Model can validate invariant - in other word database constrants.
-`OPERATION` validate focus on precondition.
+Service validate focus on precondition.
 
 NOTE: I'm still seeking better architecture, this is not conclusion.
 
