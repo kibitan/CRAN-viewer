@@ -1,4 +1,5 @@
 class Package::FetchAllFromCRANService
+  # FIXME: this class should be as model not as service
   include BaseService
 
   require "dcf"
